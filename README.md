@@ -2,7 +2,7 @@
 
 ## Overview
 
-Think of the interactions you have with any web application. You're likely clicking buttons, hovering over items, submitting forms - these are just a few of the actions you can take to interact with the application. If you've ever tried to manage all of these actions with plain old JavaScript of jQuery, you know how hard it can be to keep track of all of those different actions. In this reading, we'll look at how Redux helps us describe these actions in a large application. 
+Think of the interactions you have with any web application. You're likely clicking buttons, hovering over items, submitting forms - these are just a few of the actions you can take to interact with the application. If you've ever tried to manage all of these actions with plain old JavaScript or jQuery, you know how hard it can be to keep track of all of those different actions. In this reading, we'll look at how Redux helps us describe these actions in a large application. 
 
 ## Objectives
 1. Understand the purpose of actions in a Redux application
@@ -55,7 +55,7 @@ When we dispatch the action, our store can now update the state using the data w
 
 ## Action Creators
 
-As we talked about earlier, actions are getting creator all the time in our applications. It's kind of a pain to have to create these objects each time we want to dispatch one to the store. In Redux, we typically create functions, called "Action Creators". These are just normal JavaScript functions that return normal JavaScript Objects. 
+As we talked about earlier, actions are getting created all the time in our applications. It's kind of a pain to have to create these action objects each time we want to dispatch one to the store. In Redux, we typically create functions, called "Action Creators". These are just normal JavaScript functions that return normal JavaScript Objects. 
 
 ```javascript
 function incrementCount(){
@@ -90,7 +90,7 @@ let createTweetAction = createTweetAction({ content: "Here's a picture of some f
 store.dispatch( createTweetAction ) ;
 ```
 
-Finally, you can imagine that many actions don't just affect the state of our application. We may also need to be able to do other things, like send requests to our API to update our database. Our Action Creator functions give us a great place to do stuff like this. 
+Finally, you can imagine that many actions don't just affect the state of our application. We may also need to be able to do other things, like send requests to our API to update our database. Our Action Creator functions give us a great place to make these requests. 
 
 ```javascript
 function createTweet(tweet) {
