@@ -18,9 +18,9 @@ As we've seen in the past, keeping track of user interactions is hard. Figuring 
 In Redux, we have a simple way to describe our actions. We simply create plain old JavaScript objects with a `type` property. The type property may be something like `ADD_TODO`, `CREATE_TWEET`, or `INCREMENT_COUNT`. 
 
 ```javascript
-let incrementCountAction = {type: 'INCREMENT_COUNT'}
-let addTodoAction = {type: 'ADD_TODO'}
-let createTweetAction = {type: 'CREATE_TWEET'}
+const incrementCountAction = {type: 'INCREMENT_COUNT'}
+const addTodoAction = {type: 'ADD_TODO'}
+const createTweetAction = {type: 'CREATE_TWEET'}
 ```
 
 Imagine that we have a `store` object who's job it is to keep track of different pieces of data for our application. We'll refer to those pieces of data as our `state`. 
@@ -106,3 +106,5 @@ function createTweet(tweet) {
 ## Conclusion/So What?
 
 By using actions and action creators, we've given ourselves a consistent way to describe the different behaviors our users can take for our application. This approach will scale really well as our applications continue to grow. 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-redux-actions-and-action-creators'>Actions And Action Creators</a> on Learn.co and start learning to code for free.</p>
