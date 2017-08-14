@@ -86,7 +86,7 @@ function createTweet(tweet) {
 Now, we just pass the tweet into our action creator function.
 
 ```javascript
-let createTweetAction = createTweetAction({ content: "Here's a picture of some food", userId: 1});
+let createTweetAction = createTweet({ content: "Here's a picture of some food", userId: 1});
 store.dispatch( createTweetAction ) ;
 ```
 
